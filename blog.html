@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mr T's Big Bad Blog</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    #blog-content {
+      background-color: #f0f0f0;
+      color: black;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 2rem auto;
+      border-radius: 10px;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-size: 1.2rem;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="header.png" alt="Captain U-Turn header" class="full-width-header"/>
+  </header>
+
+  <main>
+    <h1 class="page-title">MR T’S BIG BAD BLOG</h1>
+    <div id="blog-content">Loading blog post...</div>
+  </main>
+
+  <footer>
+    <p>© 2025 The Misadventures of Captain U-Turn. Follow my X profile <a href="https://x.com/TheMancMrT" target="_blank">@TheMancMrT</a>.</p>
+  </footer>
+
+  <script>
+    fetch("https://gist.githubusercontent.com/The-Manc-Mr-T/b615f3a0036cdc02b31c9ec83fca83a8/raw/34b37aa03bbf1a4add54f8356b9376a97f610593/blog.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("blog-content").innerHTML = data;
+      })
+      .catch(error => {
+        document.getElementById("blog-content").innerText = "Failed to load blog post.";
+        console.error("Error loading blog:", error);
+      });
+  </script>
+</body>
+</html>

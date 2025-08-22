@@ -1,49 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mr T's Big Bad Blog</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    #blog-content {
-      background-color: #f0f0f0;
-      color: black;
-      padding: 2rem;
-      max-width: 900px;
-      margin: 2rem auto;
-      border-radius: 10px;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      font-size: 1.2rem;
-      white-space: pre-wrap;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of Misinformation Blog – Official Updates</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        #warning {
+            background: #cc0000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+        #blog-content {
+            background: white;
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #444;
+            margin-top: 30px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border: 3px solid #333;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="header.png" alt="Captain U-Turn header" class="full-width-header"/>
-  </header>
 
-  <main>
-    <h1 class="page-title">MR T’S BIG BAD BLOG</h1>
-    <div id="blog-content">Loading blog post...</div>
-  </main>
+<div id="warning">
+    ⚠️ This blog is under Ministry Control. Previous posts have been removed for your protection.
+</div>
 
-  <footer>
-    <p>© 2025 The Misadventures of Captain U-Turn. Follow my X profile <a href="https://x.com/TheMancMrT" target="_blank">@TheMancMrT</a>.</p>
-  </footer>
+<div id="blog-content">
+    <h1>Ministry of Misinformation & Speech Control Blog</h1>
+    <p>This is an <strong>official notification</strong> from the <strong>Ministry of Misinformation & Speech Control (MMSC)</strong>.</p>
+    <p>Effective immediately, the blog located at <strong>captainuturn.com/blog</strong> has been <strong>lawfully requisitioned</strong> for the protection of public narratives and the maintenance of social harmony.</p>
 
-  <script>
-    fetch("https://gist.githubusercontent.com/The-Manc-Mr-T/b615f3a0036cdc02b31c9ec83fca83a8/raw/34b37aa03bbf1a4add54f8356b9376a97f610593/blog.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("blog-content").innerHTML = data;
-      })
-      .catch(error => {
-        document.getElementById("blog-content").innerText = "Failed to load blog post.";
-        console.error("Error loading blog:", error);
-      });
-  </script>
+    <h2>What just happened?</h2>
+    <ul>
+        <li>The MMSC <strong>now administers this blog</strong>.</li>
+        <li>All <strong>previous posts have been permanently removed</strong> for containing unverified or destabilising content.</li>
+        <li>From this point forward, <strong>only government-backed messages</strong> will appear here.</li>
+    </ul>
+
+    <h2>Why the takeover?</h2>
+    <p>To <strong>safeguard your mind</strong> from harmful uncertainties. Unlicensed opinions can lead to confusion, and confusion leads to non-compliance. The Ministry exists to keep you <strong>calm, informed, and correctly aligned</strong>.</p>
+
+    <h2>What will you see here now?</h2>
+    <ul>
+        <li><strong>Authoritative updates</strong> from accredited officials</li>
+        <li><strong>Clarifications</strong> of previously misunderstood facts</li>
+        <li><strong>Safety instructions</strong> for navigating the modern information environment</li>
+        <li>Occasional <strong>celebratory announcements</strong> of successfully corrected thoughts</li>
+    </ul>
+
+    <h2>Citizen Responsibilities</h2>
+    <ul>
+        <li>Consult this blog regularly for <strong>approved truths</strong>.</li>
+        <li>Refrain from sharing or recalling deprecated narratives.</li>
+        <li>Report legacy content to <strong>MMSC // Narrative Sanitation</strong>.</li>
+    </ul>
+
+    <h2>Frequently Approved Questions (FAQ)</h2>
+    <p><strong>Q: Can I read the old posts somewhere else?</strong><br>
+    A: No. They have been <strong>efficiently de-published</strong> for your wellbeing.</p>
+
+    <p><strong>Q: May I comment or submit my own post?</strong><br>
+    A: Your enthusiasm is noted and archived. <strong>Submissions are closed</strong> pending permanent closure.</p>
+
+    <p><strong>Q: How long will the Ministry control this blog?</strong><br>
+    A: For the duration of the <strong>Helpful Emergency</strong>, which renews <strong>automatically</strong>.</p>
+
+    <hr>
+    <p style="text-align:center;"><em>Truth through control. Safety through certainty. Compliance through clarity.</em></p>
+
+    <img src="ministry-poster.png" alt="Truth Through Control poster">
+</div>
+
 </body>
 </html>

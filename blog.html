@@ -100,6 +100,25 @@
       <img src="ministry-poster.png" alt="Truth Through Control poster">
     </div>
   </div>
+<script>
+  // Tell parent page (captainuturn.com) how tall this blog is
+  (function () {
+    function sendHeight() {
+      var h = Math.max(
+        document.documentElement.scrollHeight || 0,
+        document.body.scrollHeight || 0
+      );
+      // Send to any parent; the parent will origin-check
+      parent.postMessage({ type: 'BLOG_HEIGHT', height: h }, '*');
+    }
+    // Fire on load, resize, and when content changes
+    window.addEventListener('load', sendHeight);
+    window.addEventListener('resize', sendHeight);
+    new MutationObserver(sendHeight).observe(document.body, {
+      childList: true, subtree: true, attributes: true, characterData: true
+    });
+  })();
+</script>
 
 </body>
 </html>
